@@ -1,0 +1,231 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+  </head>
+  <body class="bg-blue-500">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <div class="bg-gray-800 p-4 rounded-xl shadow w-80 mx-auto mt-8">
+      <input
+        id="display"
+        type="text"
+        class="bg-gray-900 w-full p-1 rounded-md text-white rounded-lg text-right font-sans text-2xl font-bold"
+        value="0"
+      />
+      <div class="grid grid-cols-5 gap-2 mt-6">
+        <button
+          id="operator-sin"
+          class="bg-gray-700 p-2 rounded-lg text-white hover:bg-gray-600 active:scale-105 text-sm"
+        >
+          sin
+        </button>
+        <button
+          id="operator-cos"
+          class="bg-gray-700 p-2 rounded-lg text-white hover:bg-gray-600 active:scale-105 text-sm"
+        >
+          cos
+        </button>
+        <button
+          id="operator-tan"
+          class="bg-gray-700 p-2 rounded-lg text-white hover:bg-gray-600 active:scale-105 text-sm"
+        >
+          tan
+        </button>
+        <button
+          id="operator-log"
+          class="bg-gray-700 p-2 rounded-lg text-white hover:bg-gray-600 active:scale-105 text-sm"
+        >
+          log
+        </button>
+        <button
+          id="operator-ln"
+          class="bg-gray-700 p-2 rounded-lg text-white hover:bg-gray-600 active:scale-105 text-sm"
+        >
+          lin
+        </button>
+      </div>
+      <div class="grid grid-cols-5 gap-2 mt-2">
+        <button
+          id="operator-sqrt"
+          class="bg-gray-700 p-2 rounded-lg text-white hover:bg-gray-600 active:scale-105 text-sm"
+        >
+          &radic;
+        </button>
+        <button
+          id="operator-square"
+          class="bg-gray-700 p-2 rounded-lg text-white hover:bg-gray-600 active:scale-105 text-sm"
+        >
+          x&sup2;
+        </button>
+        <button
+          id="operator-pi"
+          class="bg-gray-700 p-2 rounded-lg text-white hover:bg-gray-600 active:scale-105 text-sm"
+        >
+          &pi;
+        </button>
+        <button
+          id="operator-e"
+          class="bg-gray-700 p-2 rounded-lg text-white hover:bg-gray-600 active:scale-105 text-sm"
+        >
+          e
+        </button>
+        <button
+          id="operator-power"
+          class="bg-gray-700 p-2 rounded-lg text-white hover:bg-gray-600 active:scale-105 text-sm mb-auto"
+        >
+          ^
+        </button>
+      </div>
+      <div class="grid grid-cols-5 gap-2">
+        <button
+          id="operator-clear"
+          class="bg-orange-500 p-2 rounded-lg text-white hover:bg-orange-400 active:scale-105 text-sm mt-2"
+        >
+          C
+        </button>
+        <button
+          id="operator-negate"
+          class="bg-orange-500 p-2 rounded-lg text-white hover:bg-orange-400 active:scale-105 text-sm mt-2"
+        >
+          &plusmn;
+        </button>
+        <button
+          id="operator-percent"
+          class="bg-orange-500 p-2 rounded-lg text-white hover:bg-orange-400 active:scale-105 text-sm mt-2"
+        >
+          %
+        </button>
+        <button
+          id="operator-divide"
+          class="bg-orange-500 p-2 rounded-lg text-white hover:bg-orange-400 active:scale-105 text-sm mt-2"
+        >
+          ÷
+        </button>
+        <button
+          id="operator-backspace"
+          class="bg-orange-500 p-2 rounded-lg text-white hover:bg-orange-400 active:scale-105 text-sm mt-2"
+        >
+          &#9003;
+        </button>
+      </div>
+      <div class="grid grid-cols-5 gap-2">
+        <button
+          id="number-7"
+          class="bg-gray-700 p-2 rounded-lg text-white hover:bg-gray-600 active:scale-105 text-sm mt-2"
+        >
+          7
+        </button>
+        <button
+          id="number-8"
+          class="bg-gray-700 p-2 rounded-lg text-white hover:bg-gray-600 active:scale-105 text-sm mt-2"
+        >
+          8
+        </button>
+        <button
+          id="number-9"
+          class="bg-gray-700 p-2 rounded-lg text-white hover:bg-gray-600 active:scale-105 text-sm mt-2"
+        >
+          9
+        </button>
+        <button
+          id="operator-multiply"
+          class="bg-orange-500 p-2 rounded-lg text-white hover:bg-orange-400 active:scale-105 text-sm mt-2"
+        >
+          *
+        </button>
+        <button
+          id="operator-reciprocal"
+          class="bg-orange-500 p-2 rounded-lg text-white hover:bg-orange-400 active:scale-105 text-sm mt-2"
+        >
+          1/x
+        </button>
+      </div>
+      <div class="grid grid-cols-5 gap-2">
+        <button
+          id="number-4"
+          class="bg-gray-700 p-2 rounded-lg text-white hover:bg-gray-600 active:scale-105 text-sm mt-2"
+        >
+          4
+        </button>
+        <button
+          id="number-5"
+          class="bg-gray-700 p-2 rounded-lg text-white hover:bg-gray-600 active:scale-105 text-sm mt-2"
+        >
+          5
+        </button>
+        <button
+          id="number-6"
+          class="bg-gray-700 p-2 rounded-lg text-white hover:bg-gray-600 active:scale-105 text-sm mt-2"
+        >
+          6
+        </button>
+        <button
+          id="operator-subtract"
+          class="bg-orange-500 p-2 rounded-lg text-white hover:bg-orange-400 active:scale-105 text-sm mt-2"
+        >
+          -
+        </button>
+        <button
+          id="operator-abs"
+          class="bg-orange-500 p-2 rounded-lg text-white hover:bg-orange-400 active:scale-105 text-sm mt-2"
+        >
+          |x|
+        </button>
+      </div>
+      <div class="grid grid-cols-5 gap-2">
+        <button
+          id="number-1"
+          class="bg-gray-700 p-2 rounded-lg text-white hover:bg-gray-600 active:scale-105 text-sm mt-2"
+        >
+          1
+        </button>
+        <button
+          id="number-2"
+          class="bg-gray-700 p-2 rounded-lg text-white hover:bg-gray-600 active:scale-105 text-sm mt-2"
+        >
+          2
+        </button>
+        <button
+          id="number-3"
+          class="bg-gray-700 p-2 rounded-lg text-white hover:bg-gray-600 active:scale-105 text-sm mt-2"
+        >
+          3
+        </button>
+        <button
+          id="operator-add"
+          class="bg-orange-500 p-2 rounded-lg text-white hover:bg-orange-400 active:scale-105 text-sm mt-2"
+        >
+          +
+        </button>
+        <button
+          id="operator-exp"
+          class="bg-orange-500 p-2 rounded-lg text-white hover:bg-orange-400 active:scale-105 text-sm mt-2"
+        >
+          exp
+        </button>
+      </div>
+      <div class="grid grid-cols-5 gap-2">
+        <button
+          id="number-0"
+          class="bg-gray-700 p-2 rounded-lg text-white hover:bg-gray-600 active:scale-105 text-sm mt-2 col-span-2"
+        >
+          0
+        </button>
+        <button
+          id="operator-decimal"
+          class="bg-orange-500 p-2 rounded-lg text-white hover:bg-orange-400 active:scale-105 text-sm mt-2"
+        >
+          .
+        </button>
+        <button
+          id="operator-equals"
+          class="bg-orange-500 p-2 rounded-lg text-white hover:bg-orange-400 active:scale-105 text-sm mt-2 col-span-2"
+        >
+          =
+        </button>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
